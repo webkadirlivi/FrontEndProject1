@@ -1,34 +1,5 @@
-var csr = document.querySelector("#cursor") 
-var csrBlr = document.querySelector("#cursor-blur") 
-
-document.addEventListener("mousemove", function(dets){
-    csr.style.left = dets.x + "px";
-    csr.style.top = dets.y + "px";
-    csrBlr.style.left = dets.x  - 150 + "px";
-    csrBlr.style.top = dets.y - 150 + "px";
-})
-
-var h4all = document.querySelectorAll("#nav h4")
-h4all.forEach(function(elem) {
-    elem.addEventListener("mouseenter", function() {
-        csr.style.scale = 3
-        csr.style.border = "1px solid black"
-        csr.style.backgroundColor = "transparent"
-    })
-})
-
-var h4all = document.querySelectorAll("#nav h4")
-h4all.forEach(function(elem) {
-    elem.addEventListener("mouseleave", function() {
-        csr.style.scale = 1
-        csr.style.border = "1px solid aqua"
-        csr.style.backgroundColor = "aqua"
-    })
-})
-
-
 gsap.to("#nav",{
-    backgroundColor: "#000",
+    backgroundColor: "#1B1B1B",
     height:"110px",
     duration: 0.5,
     scrollTrigger:{
@@ -66,26 +37,45 @@ gsap.from("#about-us img , #about-us-in", {
 })
 
 
-gsap.from("#colon1", {
-    y:70,
-    x:70,
-    scrollTrigger: {
-        trigger: "#colon2",
-        scroller: "body",
-        start: "top 55%",
-        end: "top 45%",
-        scrub: 4
+gsap.from("#card-container , .header", {
+    y:50,
+    opacity:0,
+    duration:1,
+    stagger:0.3,
+    scrollTrigger:{
+        trigger:"#card-container",
+        scroller:"body",
+        start:"top 50%",
+        end:"top 46%",
+        scrub:1
     }
 })
 
-gsap.from("#colon2", {
-    y:50,
+gsap.from("#page3 , .heading-word", {
     x:50,
-    scrollTrigger: {
-        trigger: "#page3",
-        scroller: "body",
-        start: "top 55%",
-        end: "top 45%",
-        scrub: 4
+    opacity:0,
+    duration:1,
+    stagger:0.2,
+    scrollTrigger:{
+        trigger:"#page3",
+        scroller:"body",
+        start:"top 60%",
+        end:"top 58%",
+        scrub:2
     }
 })
+
+gsap.from("#more , #border", {
+    x:-50,
+    opacity:0,
+    duration:1,
+    stagger:0.2,
+    scrollTrigger:{
+        trigger:"#more",
+        scroller:"body",
+        start:"top 60%",
+        end:"top 58%",
+        scrub:2
+    }
+})
+
