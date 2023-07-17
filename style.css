@@ -11,7 +11,7 @@
 }
 
 html,body{
-    height: 00%;
+    height: 100%;
     width: 100%;
 }
 
@@ -59,6 +59,31 @@ video {
     flex-direction: column;
     text-align: center;
     z-index: 10;
+}
+
+#page1 #arrow {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border: 2px solid #ff0266;
+    border-radius: 50%;
+    left: 1%;
+    bottom: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease;
+}
+
+#page1 #arrow i {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#page1 #arrow:hover {
+    scale: 2;
+    background-color: #ff0266;
 }
 
 #page1 h1 {
@@ -326,6 +351,7 @@ video {
   color: #fff;
   transition: all 0.3s ease;
   z-index: 3;
+  -webkit-text-stroke: 1px #ff0266;
 }
 
 #more h1:hover{
@@ -477,4 +503,59 @@ video {
 #desc-in2 h1:hover {
     letter-spacing: 5px;
     color: #ff0266;
+}
+
+#footer {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+    background-color: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    margin: 30px 0;
+    
+}
+
+#footer h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    z-index: 2;
+}
+
+
+.footer-content-in {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+    gap: 8px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.createdby {
+    display: flex;
+    flex-direction: column;
+}
+
+#footer img {
+    scale: 0.5;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: -6%;
+    left: 76%;
+    z-index: 1;
+    opacity: 0.4;
 }

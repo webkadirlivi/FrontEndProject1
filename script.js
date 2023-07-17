@@ -67,14 +67,13 @@ gsap.from("#page3 , .heading-word", {
 
 gsap.from("#more , #border", {
     x:-50,
-    opacity:0,
     duration:1,
     stagger:0.2,
     scrollTrigger:{
         trigger:"#more",
         scroller:"body",
-        start:"top 60%",
-        end:"top 58%",
+        start:"top 65%",
+        end:"top 60%",
         scrub:2
     }
 })
