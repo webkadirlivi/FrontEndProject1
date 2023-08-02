@@ -16,4 +16,4 @@ Project is created with:
 * GSAP
 
 ## Demo
-https://resilient-taiyaki-5edbf0.netlify.app
+https://webkadirproject1notresponsive.netlify.app
