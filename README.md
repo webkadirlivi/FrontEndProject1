@@ -13,7 +13,7 @@ This project is simple Front-End for Restaurant
 Project is created with:
 * HTML
 * CSS
-* JAVASCRPIT
+* GSAP
 
 ## Demo
 https://resilient-taiyaki-5edbf0.netlify.app
